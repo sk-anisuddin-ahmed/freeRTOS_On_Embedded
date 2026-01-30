@@ -22,7 +22,7 @@ void vConsumerTask(void *pvParameters)
     {
         if(xQueueReceive(xQueue, &value, portMAX_DELAY) == pdTRUE)
         {
-            // Process value
+            
         }
         vTaskDelay(pdMS_TO_TICKS(200));
     }

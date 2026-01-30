@@ -9,7 +9,7 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
 
 void vOverflowTask(void *pvParameters)
 {
-    char bigArray[1024]; // Intentionally large to cause overflow
+    char bigArray[1024]; 
     for(;;)
     {
         bigArray[0] = 1;

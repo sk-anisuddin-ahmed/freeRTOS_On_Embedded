@@ -10,7 +10,7 @@ void vUartTask1(void *pvParameters)
     {
         if(xSemaphoreTake(xUartMutex, portMAX_DELAY))
         {
-            // Access UART
+            
             xSemaphoreGive(xUartMutex);
         }
         vTaskDelay(pdMS_TO_TICKS(100));
@@ -23,7 +23,7 @@ void vUartTask2(void *pvParameters)
     {
         if(xSemaphoreTake(xUartMutex, portMAX_DELAY))
         {
-            // Access UART
+            
             xSemaphoreGive(xUartMutex);
         }
         vTaskDelay(pdMS_TO_TICKS(150));

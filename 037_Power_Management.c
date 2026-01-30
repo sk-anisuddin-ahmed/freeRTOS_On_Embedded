@@ -7,7 +7,7 @@ void vPowerTask(void *pvParameters)
     for(;;)
     {
         printf("Entering low power mode\n");
-        // Simulate low power entry
+        
         vTaskDelay(pdMS_TO_TICKS(2000));
         printf("Exiting low power mode\n");
         vTaskDelay(pdMS_TO_TICKS(1000));

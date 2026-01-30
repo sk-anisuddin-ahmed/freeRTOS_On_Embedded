@@ -6,9 +6,9 @@ TaskHandle_t xTaskHandle;
 void vTaskFunction(void *pvParameters)
 {
     vTaskDelay(pdMS_TO_TICKS(100));
-    vTaskSuspend(NULL); // Suspend self
-    vTaskResume(xTaskHandle); // Resume another
-    vTaskDelete(NULL); // Delete self
+    vTaskSuspend(NULL); 
+    vTaskResume(xTaskHandle); 
+    vTaskDelete(NULL); 
 }
 
 int main()

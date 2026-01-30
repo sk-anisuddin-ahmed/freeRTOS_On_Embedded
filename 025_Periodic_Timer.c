@@ -6,7 +6,7 @@ TimerHandle_t xTimer;
 
 void vTimerCallback(TimerHandle_t xTimer)
 {
-    // Toggle LED
+    
 }
 
 int main()

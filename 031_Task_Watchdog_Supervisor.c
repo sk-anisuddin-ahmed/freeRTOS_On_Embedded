@@ -22,7 +22,7 @@ void vSupervisorTask(void *pvParameters)
         }
         else
         {
-            // Take action: log, reset, etc.
+            
         }
         vTaskDelay(pdMS_TO_TICKS(1000));
     }

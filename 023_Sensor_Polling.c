@@ -6,7 +6,7 @@ void vSensorTask(void *pvParameters)
 {
     for(;;)
     {
-        int sensor_value = 123; // Simulate sensor read
+        int sensor_value = 123; 
         printf("Sensor value: %d\n", sensor_value);
         vTaskDelay(pdMS_TO_TICKS(500));
     }

@@ -4,7 +4,7 @@
 void vTaskFunction(void *pvParameters)
 {
     char buf[128];
-    vTaskList(buf); // Get task info
+    vTaskList(buf); 
     for(;;)
     {
         vTaskDelay(pdMS_TO_TICKS(1000));

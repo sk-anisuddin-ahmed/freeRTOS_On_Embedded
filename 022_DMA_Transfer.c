@@ -26,7 +26,7 @@ int main()
 {
     xTaskCreate(vDMATask, "DMA", 128, NULL, 2, NULL);
     vTaskStartScheduler();
-    // Simulate DMA interrupt
+    
     vDMA_ISR();
     return 0;
 }

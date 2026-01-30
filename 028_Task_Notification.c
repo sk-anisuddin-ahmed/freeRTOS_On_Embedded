@@ -17,7 +17,7 @@ void vReceiverTask(void *pvParameters)
     for(;;)
     {
         ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-        // Received notification
+        
     }
 }
 

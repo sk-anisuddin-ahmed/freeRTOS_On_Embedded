@@ -12,7 +12,7 @@ void vTimerCallback(TimerHandle_t xTimer)
 
 void vISR(void)
 {
-    // Simulate ISR triggering timer
+    
     xTimerStart(xTimer, 0);
 }
 
@@ -20,7 +20,7 @@ int main()
 {
     xTimer = xTimerCreate("DeferredISR", pdMS_TO_TICKS(1000), pdFALSE, NULL, vTimerCallback);
     vTaskStartScheduler();
-    // Simulate ISR event
+    
     vISR();
     return 0;
 }
